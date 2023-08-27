@@ -20,10 +20,10 @@ export const Main = () => {
 };
 
 const Photo = styled.img `
-  width: 350px;
-  height: 430px;
+  width: 550px;
+  height: 630px;
   object-fit: cover;
-  margin-top: 50px;
+  margin-top: 150px;
 `
 
 const StyledMain = styled.div `
