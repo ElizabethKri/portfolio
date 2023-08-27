@@ -12,7 +12,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: #e1d0ff;
+  background-color: #fde8fd;
   display: flex;
   justify-content: space-between;
 `
