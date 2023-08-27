@@ -26,6 +26,7 @@ const StyledMenu = styled.nav`
     padding-right: 20px;
     list-style: none;
     cursor: pointer;
+    justify-content: center;
   }
 
   a {
