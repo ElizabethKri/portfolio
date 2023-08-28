@@ -30,6 +30,6 @@ const workItems = ["All", "Landing page", "React", "Angular"]
 };
 
 const StyledWorks = styled.section `
-  min-height: 100vh;
+  min-height: 60vh;
   background-color: #e1d0ff;
     `
