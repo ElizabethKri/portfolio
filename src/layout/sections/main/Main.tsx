@@ -26,7 +26,7 @@ const Photo = styled.img `
   margin-top: 150px;
 `
 
-const StyledMain = styled.div `
+const StyledMain = styled.section `
   min-height: 100vh;
   background-color: #e1d0ff;
 `
