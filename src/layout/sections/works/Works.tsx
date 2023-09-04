@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
-import Menu from "../../../components/menu/Menu";
+
 import FlexWrapper from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import socialImg from './../../../assets/images/project1.webp'
 import timerImg from './../../../assets/images/project3.webp'
+import {Menu} from "../../../components/menu/Menu";
 
 const workItems = ["All", "Landing page", "React", "Angular"]
 
