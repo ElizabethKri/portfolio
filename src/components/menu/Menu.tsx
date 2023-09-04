@@ -34,4 +34,3 @@ const StyledMenu = styled.nav`
   }
 `
 
-export default Menu;
