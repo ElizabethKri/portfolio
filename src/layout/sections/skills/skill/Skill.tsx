@@ -1,19 +1,19 @@
-import React from 'react';
-import Icon from "../../../../components/icon/Icon";
 import styled from "styled-components";
 import FlexWrapper from "../../../../components/FlexWrapper";
+import Icon from "../../../../components/icon/Icon";
 
 type SkillPropsType = {
-    iconId: string;
+    // iconId?: string;
     title: string;
-
+    children?:  any
 }
 export const Skill = (props: SkillPropsType) => {
     return (
         <StyledSkill>
             <FlexWrapper direction={"column"} align={"center"}>
                 <IconWrapper>
-                    <Icon iconId={props.iconId}/>
+                    {props.children}
+                    {/*<Icon iconId={props.iconId}/>*/}
                 </IconWrapper>
 
                 <SkillTitle>{props.title}</SkillTitle>
