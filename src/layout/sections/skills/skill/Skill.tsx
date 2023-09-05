@@ -29,10 +29,6 @@ const StyledSkill = styled.div`
 `
 const SkillTitle = styled.h3`
   margin-top: 25px;
-  font-family: 'Josef Sans', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
   text-transform: uppercase;
 `
 
