@@ -16,8 +16,9 @@ export const Main = () => {
                         <SmallText>I’am coding with a clean and beautiful problem solving in mind, create adaptive
                             websites where technology is combined with creativity</SmallText>
                     </div>
-
-                    <Photo src={photo} alt=""/>
+                    <PhotoWrapper>
+                        <Photo src={photo} alt=""/>
+                    </PhotoWrapper>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -25,10 +26,27 @@ export const Main = () => {
 };
 
 const Photo = styled.img`
-  width: 550px;
-  height: 600px;
+  width: 450px;
+  height: 520px;
   object-fit: cover;
   margin-top: 150px;
+`
+const PhotoWrapper = styled.div `
+    
+  position: relative;
+  z-index: 0;
+  
+  &::before {
+    content: '';
+    width: 460px;
+    height: 570px;
+    border: 5px solid ${theme.colors.accent};
+    
+    position: absolute;
+    top: 124px;
+    left: 24px;
+    z-index: -1;
+  }
 `
 
 const StyledMain = styled.section`
@@ -46,7 +64,8 @@ const Name = styled.h2`
   span{
     position: relative;
     z-index: 0;
-    
+    width: max-content;
+    display: block;
     &::before{
       content: '';
       display: inline-block;
