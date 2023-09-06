@@ -3,6 +3,7 @@ import Logo from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import FlexWrapper from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
+import {theme} from "../../styles/Theme";
 
 const items = ["Home", "Skills", "Works", "About", "Contact"]
 
@@ -20,7 +21,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: #faddfa;
+  background-color: ${theme.colors.headerFooter};
   padding: 20px 0;
   position: fixed;
   left: 0;
