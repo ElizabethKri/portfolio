@@ -25,7 +25,6 @@ export const Button = styled.button`
     height: 10px;
     width: 50%;
     background-color: ${theme.colors.accent};
-    
     position: absolute;
     bottom: 0;
     left: 50%;
