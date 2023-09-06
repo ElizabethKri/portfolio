@@ -32,7 +32,7 @@ const SkillTitle = styled.h3`
   text-transform: uppercase;
 `
 
-const IconWrapper = styled.div`
+export const IconWrapper = styled.div`
   position: relative;
 
   &::before {
