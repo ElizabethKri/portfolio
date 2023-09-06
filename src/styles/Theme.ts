@@ -6,6 +6,7 @@ export const theme = {
         accent: '#7572D5',
         font: '#211f26',
         icon: '#7572D5',
-        placeholder: "#590de5"
+        placeholder: "#590de5",
+        headerFooter: "#faddfa"
     }
 }
