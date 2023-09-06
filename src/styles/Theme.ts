@@ -5,6 +5,7 @@ export const theme = {
         secondaryBg: '#fde8fd',
         accent: '#7572D5',
         font: '#211f26',
-        icon: '#7572D5'
+        icon: '#7572D5',
+        placeholder: "#590de5"
     }
 }
