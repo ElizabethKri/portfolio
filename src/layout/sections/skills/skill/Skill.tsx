@@ -23,9 +23,9 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-  width: 200px;
+  width: 150px;
   flex-grow: 1;
-  padding: 6px;
+  padding: 5px;
   
 
 `
@@ -33,6 +33,7 @@ const SkillTitle = styled.h3`
   margin-top: 25px;
   margin-bottom: 25px;
   text-transform: uppercase;
+  text-align: center;
 `
 
 export const IconWrapper = styled.div`

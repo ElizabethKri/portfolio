@@ -59,6 +59,11 @@ const PhotoWrapper = styled.div `
       left: 20px;
     }
   }
+
+  @media ${theme.media.mobile}{
+    margin-top: 25px;
+  }
+  
 `
 
 const StyledMain = styled.section`
