@@ -29,7 +29,13 @@ const StyledHeaderMenu = styled.nav`
     list-style: none;
     cursor: pointer;
     justify-content: center;
-  }`
+  }
+   @media ${theme.media.tablet} {
+     display: none;
+   }
+  
+
+`
 
 
 

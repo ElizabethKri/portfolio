@@ -8,5 +8,11 @@ export const theme = {
         icon: '#7572D5',
         placeholder: "#590de5",
         headerFooter: "#faddfa"
-    }
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
+    },
+
 }
