@@ -17,7 +17,7 @@ const workItems = ["All", "Landing page", "React", "Angular"]
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu menuItems={workItems}/>
-                <FlexWrapper justify={"space-between"} align={"flex-start"}>
+                <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
                     <Work title={"Online store of branded bags"}
                           text={"\"Starbrands\" is an Italian premium brand that\n" +
                               "produces leather goods. The company produces bags of the highest class\n" +
@@ -33,5 +33,7 @@ const workItems = ["All", "Landing page", "React", "Angular"]
 };
 
 const StyledWorks = styled.section `
-  
+    ${FlexWrapper}{
+      gap: 30px;
+    }
     `
