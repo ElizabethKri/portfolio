@@ -7,7 +7,6 @@ import {Container} from "../Container";
 export const Slider = () => {
     return (
         <StyledSlider>
-            <Container>
                 <FlexWrapper>
                     <Slide>
                         <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -15,7 +14,6 @@ export const Slider = () => {
                             elit.</Text>
                     </Slide>
                 </FlexWrapper>
-            </Container>
             <Pagination>
                 <span></span>
                 <span className={"active"}></span>
