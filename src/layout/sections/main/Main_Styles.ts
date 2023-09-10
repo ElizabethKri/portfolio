@@ -66,7 +66,7 @@ const Name = styled.h2`
       background-color: ${theme.colors.accent};
       
       position: absolute;
-      bottom: 0;
+      bottom: -7px;
       z-index: -1;
     }
   }
