@@ -80,10 +80,16 @@ const MainTitle = styled.h1`
   //font-weight: 400;
   //font-size: 27px;
   margin: 10px 0;
+  
 `
 const SmallText = styled.h2`
   font-size: 14px;
   font-weight: 400;
+  width: 348px;
+  
+  p{
+    display: none;
+  }
 `
 
 export const S= {
