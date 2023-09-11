@@ -9,7 +9,7 @@ import {Container} from "../../../components/Container";
 
 export const About: React.FC = () => {
     return (
-        <StyledAbout>
+        <StyledAbout id={"about"}>
             <Container>
                 <SectionTitle>About me</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
