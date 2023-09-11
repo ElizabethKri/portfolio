@@ -12,6 +12,7 @@ import {SiJavascript, SiNestjs, SiStyledcomponents, SiTypescript} from "react-ic
 import {BsGit, BsGithub} from "react-icons/bs";
 import {IoLogoFigma} from "react-icons/io5";
 import {S} from ".//Skills_Styles"
+import {Fade} from "react-awesome-reveal"
 
 const skillData = [
     {
@@ -100,10 +101,13 @@ export const Skills = () => {
             <Container><SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
 
-                    {skillData.map((s, index) =>
-                    {return <Skill title={s.title}>
-                        <s.iconReact size={s.size} style={{fill: s.style}}/>
+                    <Fade cascade={true} damping={0.1}>
+                        {skillData.map((s, index) =>
+                        {return <Skill title={s.title}>
+                            <s.iconReact size={s.size} style={{fill: s.style}}/>
                         </Skill>})}
+                    </Fade>
+
 
                 </FlexWrapper>
             </Container>
