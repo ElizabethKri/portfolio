@@ -26,6 +26,7 @@ export const About: React.FC = () => {
 const StyledAbout = styled.section `
   background-color: #fde8fd;
   min-height: 50vh;
+  position: relative;
   
   ${S.IconWrapper}{
     margin: 20px 0 70px;

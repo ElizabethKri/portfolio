@@ -6,6 +6,7 @@ import {theme} from "../../styles/Theme";
 const Footer = styled.footer`
   background-color: ${theme.colors.headerFooter};
   padding: 40px;
+  position: relative;
 `
 
 const SocialList = styled.ul`

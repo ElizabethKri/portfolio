@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 
-const Skills = styled.section``
+const Skills = styled.section`
+    position: relative;
+`
 
 const Skill = styled.div`
   width: 150px;

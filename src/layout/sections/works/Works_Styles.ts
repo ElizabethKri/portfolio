@@ -5,10 +5,12 @@ import {theme} from "../../../styles/Theme";
 import {Link} from "../../../components/Link";
 
 const Works = styled.section `
-    ${FlexWrapper}{
-      gap: 30px;
-    }
-    `
+  position: relative;
+
+  ${FlexWrapper} {
+    gap: 30px;
+  }
+`
 const Work = styled.div `
   background-color: ${theme.colors.secondaryBg};
   width: 330px;
