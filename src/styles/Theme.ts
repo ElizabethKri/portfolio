@@ -16,4 +16,8 @@ export const theme = {
         desktop: "screen and (min-width: 1140px)",
     },
 
+    animation: {
+        transition: " .2s ease-in-out;"
+    }
+
 }
