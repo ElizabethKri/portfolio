@@ -86,6 +86,7 @@ const SmallText = styled.h2`
   font-size: 14px;
   font-weight: 400;
   width: 348px;
+  height: 10px;
   
   p{
     display: none;
