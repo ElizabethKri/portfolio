@@ -42,7 +42,7 @@ const PhotoWrapper = styled.div `
   }
 
   @media ${theme.media.mobile}{
-    margin-top: 25px;
+    margin-top: 30px;
   }
 `
 const Name = styled.h2`
