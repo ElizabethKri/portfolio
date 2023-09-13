@@ -32,7 +32,8 @@ export const Menu: React.FC = () => {
                 return <S.MenuItem key={index}>
                     <S.NavLink to={item.href}
                                activeClass = "active"
-                               // offset={-0.1}
+
+                               offset={-50}
                                smooth={true}
                                spy = {true}
                     >{item.title}

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {font} from "../../../styles/Common";
 import {theme} from "../../../styles/Theme";
+import Typewriter from "typewriter-effect";
 
 const Main = styled.section`
   min-height: 100vh;
@@ -16,6 +17,10 @@ const Photo = styled.img`
     width: 310px;
     height: 380px;
   }
+`
+
+const TypewriterSmall =styled(Typewriter) `
+  height: 55px;
 `
 const PhotoWrapper = styled.div `
     
@@ -36,7 +41,7 @@ const PhotoWrapper = styled.div `
     @media ${theme.media.mobile}{
       width: 314px;
       height: 414px;
-      top: -17px;
+      top: -25px;
       left: 20px;
     }
   }
@@ -86,7 +91,8 @@ const SmallText = styled.h2`
   font-size: 14px;
   font-weight: 400;
   width: 348px;
-  height: 10px;
+  height: 55px;
+
   
   p{
     display: none;
@@ -99,5 +105,6 @@ export const S= {
   PhotoWrapper,
   Name,
   MainTitle,
-  SmallText
+  SmallText,
+  TypewriterSmall
 }
