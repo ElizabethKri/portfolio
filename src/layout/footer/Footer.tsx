@@ -15,7 +15,7 @@ const socialItemsData = [
     },
     {
         iconId: "telegram",
-        href: "https://t.me/Elizabeth_Kri"
+        href: "https://t.me/Elizabeth_Kri_Fox"
     },
 ]
 

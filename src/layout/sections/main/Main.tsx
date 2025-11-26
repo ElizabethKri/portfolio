@@ -1,9 +1,8 @@
 import React from 'react';
-import photo from "../../../assets/images/photo.webp"
+import photo from "../../../assets/images/white.webp"
 import FlexWrapper from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from "./Main_Styles"
-import Typewriter from 'typewriter-effect'
 import Tilt from 'react-parallax-tilt'
 
 export const Main: React.FC = () => {

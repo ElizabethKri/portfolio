@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 import {SectionTitle} from "../../../components/SectionTitle";
 import FlexWrapper from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
-import socialImg from './../../../assets/images/project1.webp'
-import timerImg from './../../../assets/images/project3.webp'
+import starBrand from './../../../assets/images/project1.webp'
+import todo from './../../../assets/images/project3.webp'
+import cinema from './../../../assets/images/project4.webp'
+
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles"
@@ -17,10 +19,6 @@ const tabsItems : Array<{status: TabsStatusType ,title: string}> = [
         status: "all",
     },
     {
-        title: "Landing page",
-        status: "landing",
-    },
-    {
         title: "React",
         status: "react",
     },
@@ -28,29 +26,39 @@ const tabsItems : Array<{status: TabsStatusType ,title: string}> = [
         title: "Angular",
         status: "angular",
     },
-    {
-        title: "SPA",
-        status: "spa",
-    },
 ]
 
 const worksData = [
     {
         title:"Online store of branded bags",
-        src: socialImg,
+        src: starBrand,
         text: "\"Starbrands\" is an Italian premium brand that\n" +
             "produces leather goods. The company produces bags of the highest class\n" +
             "men's and women's collections.",
         type: "angular",
+        demo: 'https://star-brands-new.vercel.app/starbrands/main',
+        code: 'https://github.com/ElizabethKri/StarBrandsNew.git',
         id: 1,
     },
     {
-        title:"Timer",
-        src: timerImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. " +
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit ut labore et dolore magna aliqua Ut enim",
+        title:"Todolist",
+        src: todo,
+        text: "The Todolist app allows you to create notes. In these notes, you can add and remove tasks, change the name, and filter by completion." +
+            "To log in, you need to use your username and password, which I will provide in person.",
         type: "react",
+        demo: 'https://rtkquery-ten.vercel.app/login',
+        code: 'https://github.com/ElizabethKri/rtkquery.git',
         id: 2,
+    },
+    {
+        title:"TMBD cinema",
+        src: cinema,
+        text: "This app was created using TMDb (The Movie Database), a database with information about millions of movies and TV shows from around the world. " +
+            "To load the data, you need to use a VPN.",
+        type: "react",
+        demo: 'https://tmdbkino-85fyrpd3f-elizabeths-projects-07424bad.vercel.app/',
+        code: 'https://github.com/ElizabethKri/tmdbkino.git',
+        id: 3,
     },
 ]
 
@@ -59,17 +67,11 @@ const worksData = [
     const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
     let filteredWorks = worksData
 
-     if(currentFilterStatus === "landing"){
-         filteredWorks = worksData.filter(work => work.type === "landing")
-     }
      if(currentFilterStatus === "react"){
          filteredWorks = worksData.filter(work => work.type === "react")
      }
      if(currentFilterStatus === "angular"){
          filteredWorks = worksData.filter(work => work.type === "angular")
-     }
-     if(currentFilterStatus === "spa"){
-         filteredWorks = worksData.filter(work => work.type === "spa")
      }
 
      function changeFilterStatus (value: TabsStatusType){
@@ -96,7 +98,10 @@ const worksData = [
                                         <Work title={w.title}
                                               text={w.text}
                                               src={w.src}
-                                              key={w.id}/>
+                                              key={w.id}
+                                              demo={w.demo}
+                                              code={w.code}
+                                        />
                                     </motion.div>
                                 )
                             }

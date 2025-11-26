@@ -18,10 +18,10 @@ const items = [
         title :  "About",
         href: "about"
     },
-    {
-        title :  "Contact",
-        href: "contact"
-    },
+    // {
+    //     title :  "Contact",
+    //     href: "contact"
+    // },
    ]
 
 export const Menu: React.FC = () => {
