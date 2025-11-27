@@ -16,7 +16,7 @@ export const Work: React.FC <WorkPropsType>  = (props: WorkPropsType) => {
         <S.Work>
             <S.ImageWrapper>
                 <S.Image src={props.src} alt=""/>
-                <Button>view project</Button>
+                {/*<Button>view project</Button>*/}
             </S.ImageWrapper>
 
 
